@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: Build via script
+  image: debian
+  commands:
+  - ./build.sh
