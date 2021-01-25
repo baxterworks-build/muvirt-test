@@ -13,4 +13,4 @@ pushd muvirt*
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
-make -j16
+make -j1 V=s
