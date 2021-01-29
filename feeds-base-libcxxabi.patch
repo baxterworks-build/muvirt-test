@@ -1,0 +1,12 @@
+diff --git a/package/libs/libcxxabi/Makefile b/package/libs/libcxxabi/Makefile
+index 90547561b2..fe8bd0ed85 100644
+--- a/package/libs/libcxxabi/Makefile
++++ b/package/libs/libcxxabi/Makefile
+@@ -58,7 +58,7 @@ TARGET_CXXFLAGS += -flto
+ TARGET_LDFLAGS += -Wl,--gc-sections,--as-needed
+
+ define Build/Prepare
+-       $(MAKE) -C $(TOPDIR)/package/libs/libcxx prepare
++       $(MAKE) -C $(TOPDIR)/package/feeds/base/libcxx prepare
+        $(call Build/Prepare/Default)
+ endef
